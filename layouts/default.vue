@@ -12,8 +12,10 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-footer :fixed="fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+    <v-footer absolute app>
+      <v-col class="text-center" cols="12">
+        <span>&copy; {{ new Date().getFullYear() }} - SRI</span>
+      </v-col>
     </v-footer>
   </v-app>
 </template>
