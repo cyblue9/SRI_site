@@ -2,7 +2,7 @@
   <v-app dark>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-toolbar-title v-text="title" />
-      <v-col class="text-right" cols="12">
+      <v-col class="text-right">
         <v-btn
           v-for="link in links"
           :key="link"
@@ -20,7 +20,7 @@
       </v-container>
     </v-content>
     <v-footer absolute app>
-      <v-col class="text-center" cols="12">
+      <v-col class="text-center">
         <span>&copy; {{ new Date().getFullYear() }} - SRI</span>
       </v-col>
     </v-footer>
