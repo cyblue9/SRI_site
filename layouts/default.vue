@@ -2,10 +2,17 @@
   <v-app dark>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-toolbar-title v-text="title" />
-      <v-row> </v-row>
-      <v-btn v-for="link in links" :key="link" color="white" text class="my-2">
-        {{ link }}
-      </v-btn>
+      <v-col class="text-right" cols="12">
+        <v-btn
+          v-for="link in links"
+          :key="link"
+          color="white"
+          text
+          class="my-2"
+        >
+          {{ link }}
+        </v-btn>
+      </v-col>
     </v-app-bar>
     <v-content>
       <v-container>
