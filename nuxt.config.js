@@ -5,6 +5,11 @@ const client = require('./plugins/contentful').default
 
 export default {
   mode: 'spa',
+  env: {
+    CTF_SPACE_ID: process.env.CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN: process.env.CTF_CDA_ACCESS_TOKEN,
+    CTF_BLOG_POST_TYPE_ID: process.env.CTF_BLOG_POST_TYPE_ID
+  },
   /*
    ** Headers of the page
    */
@@ -49,7 +54,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/contentful'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -123,11 +128,17 @@ export default {
       return Promise.all([
         client.getEntries({
           content_type: process.env.CTF_BLOG_POST_TYPE_ID
+        }),
+        client.getEntries({
+          content_type: 'tag'
         })
-      ]).then(([posts]) => {
+      ]).then(([posts, tags]) => {
         return [
           ...posts.items.map((post) => {
             return { route: `posts/${post.fields.postSlug}`, payload: post }
+          }),
+          ...tags.items.map((tag) => {
+            return { route: `tags/${tag.fields.slug}`, payload: tag }
           })
         ]
       })
