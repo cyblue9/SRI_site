@@ -79,6 +79,23 @@ export default {
 
 .page .tags {
   padding-bottom: 120px;
+  height: auto !important;
+}
+
+@media screen and (max-width: 480px) {
+  .page .tags {
+    min-height: 700px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .page .tags {
+    min-height: 920px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .page .tags {
+    min-height: 500px;
+  }
 }
 
 .page .tags .row {

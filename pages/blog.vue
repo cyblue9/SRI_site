@@ -36,7 +36,7 @@
                   </v-chip>
                 </template>
                 <div class="card_body">
-                  {{ getFirstBody($md.render(post.fields.postBody), 350) }}
+                  {{ getFirstBody($md.render(post.fields.postBody), 100) }}
                 </div>
               </div>
             </v-row>
