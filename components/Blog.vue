@@ -1,5 +1,5 @@
 <template>
-  <div class="blog">
+  <div>
     <h2>BLOG</h2>
     <v-container>
       <v-row>
@@ -77,10 +77,7 @@ export default {
 @import '~/assets/variables.scss';
 
 .index .blog {
-  padding-top: 100px;
-  padding-bottom: 200px;
-  text-align: center;
-  color: $font-color1;
+  padding-bottom: 120px;
   background-color: white;
 }
 
@@ -115,34 +112,5 @@ export default {
 .index .blog .card_btn {
   margin-right: auto;
   margin-left: auto;
-}
-
-.index .blog h2 {
-  display: inline-block;
-  position: relative;
-}
-
-.index .blog h2::before {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  left: -30px;
-  top: 30px;
-}
-
-.index .blog h2::after {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  right: -30px;
-  top: 30px;
 }
 </style>

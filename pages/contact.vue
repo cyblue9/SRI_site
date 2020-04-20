@@ -83,34 +83,6 @@ export default {
 <style lang="scss">
 @import '~/assets/variables.scss';
 
-.page .contact_us {
-  padding-bottom: 120px;
-}
-
-.page .contact_us .page_title h1::before {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  right: 255px;
-  top: 25px;
-}
-
-.page .contact_us .page_title h1::after {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  right: -30px;
-  top: 25px;
-}
-
 .page .contact_us .form_btn {
   text-align: center;
 }

@@ -116,10 +116,6 @@ export default {
 <style lang="scss">
 @import '~/assets/variables.scss';
 
-.page .activity {
-  padding-bottom: 120px;
-}
-
 .page .activity .activity_title {
   text-align: center;
 }
@@ -132,15 +128,11 @@ export default {
 }
 
 .page .activity .one_activity {
-  padding-bottom: 20px;
-}
-
-.page .activity .page_title {
-  color: $font-color1;
+  padding-top: 20px;
 }
 
 .page .activity .card_title {
-  font-size: 130%;
+  font-size: 160%;
   color: $font-color1;
   font-weight: 500;
   font-family: 'Roboto';
@@ -171,29 +163,5 @@ export default {
 .page .activity .more_btn {
   margin-right: auto;
   margin-left: auto;
-}
-
-.page .activity .page_title h1::before {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  left: -30px;
-  top: 25px;
-}
-
-.page .activity .page_title h1::after {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  right: -30px;
-  top: 25px;
 }
 </style>

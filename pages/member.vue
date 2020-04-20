@@ -122,9 +122,6 @@ export default {
 <style lang="scss">
 @import '~/assets/variables.scss';
 
-.page .member {
-  padding-bottom: 120px;
-}
 .page .member .card_avatar {
   margin-top: 5px;
   text-align: center;
@@ -147,29 +144,5 @@ export default {
 .page .member .card_btn {
   margin-right: auto;
   margin-left: auto;
-}
-
-.page .member .page_title h1::before {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  left: -30px;
-  top: 25px;
-}
-
-.page .member .page_title h1::after {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  right: -30px;
-  top: 25px;
 }
 </style>

@@ -5,6 +5,24 @@ html {
 .page {
   padding-top: 80px;
   background-color: #f7f7f7;
+  padding-bottom: 120px;
+  height: auto !important;
+}
+
+@media screen and (max-width: 480px) {
+  .page {
+    min-height: 700px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .page {
+    min-height: 920px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .page {
+    min-height: 500px;
+  }
 }
 
 .page_title {
@@ -21,6 +39,31 @@ html {
  margin-left: auto;
 }
 
+.page .page_title h1::before {
+  content: '';
+  background-color: #F44336;
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  left: -30px;
+  top: 25px;
+}
+
+.page .page_title h1::after {
+  content: '';
+  background-color: #F44336;
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  right: -30px;
+  top: 25px;
+}
+
 .v-application a {
   text-decoration: none;
 }
+

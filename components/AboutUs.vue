@@ -1,5 +1,5 @@
 <template>
-  <div class="aboutus">
+  <div>
     <h2>ABOUT US</h2>
     <div class="detail">
       私たちはサイエンス研究会（SRI）です。当会はコンピュータサイエンスを中心としながらも、科学技術全般に関する様々な活動を行っています。
@@ -16,9 +16,6 @@
 @import '~/assets/variables.scss';
 
 .index .aboutus {
-  padding-top: 100px;
-  text-align: center;
-  color: $font-color1;
   background-color: white;
   text-align: center;
 }
@@ -36,29 +33,5 @@
   margin-top: 15px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.index .aboutus h2::before {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  left: -30px;
-  top: 30px;
-}
-
-.index .aboutus h2::after {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  right: -30px;
-  top: 30px;
 }
 </style>

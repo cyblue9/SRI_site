@@ -71,10 +71,6 @@ export default {
 <style lang="scss">
 @import '~/assets/variables.scss';
 
-.page .blog {
-  padding-bottom: 150px;
-}
-
 .page .blog .row {
   border-top: 1px solid #ccc;
   padding-top: 20px;
@@ -107,29 +103,5 @@ export default {
 
 .page .blog .tag_label {
   color: $font-color2;
-}
-
-.page .blog .page_title h1::before {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  left: -30px;
-  top: 25px;
-}
-
-.page .blog .page_title ::after {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  right: -30px;
-  top: 25px;
 }
 </style>

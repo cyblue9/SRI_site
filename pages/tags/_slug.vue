@@ -77,27 +77,6 @@ export default {
 <style lang="scss">
 @import '~/assets/variables.scss';
 
-.page .tags {
-  padding-bottom: 120px;
-  height: auto !important;
-}
-
-@media screen and (max-width: 480px) {
-  .page .tags {
-    min-height: 700px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .page .tags {
-    min-height: 920px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .page .tags {
-    min-height: 500px;
-  }
-}
-
 .page .tags .row {
   border-top: 1px solid #ccc;
   padding-top: 20px;
@@ -117,30 +96,6 @@ export default {
 .page .tags .post_title a:link,
 .page .tags .post_title a:visited {
   color: $accent;
-}
-
-.page .tags .page_title h1::before {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  left: -30px;
-  top: 25px;
-}
-
-.page .tags .page_title h1::after {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  right: -30px;
-  top: 25px;
 }
 
 .page .tags .card_body {

@@ -65,31 +65,6 @@ export default {
 <style lang="scss">
 @import '~/assets/variables.scss';
 
-.page .slug {
-  padding-bottom: 120px;
-  height: auto !important;
-}
-
-@media screen and (max-width: 480px) {
-  .page .slug {
-    min-height: 700px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .page .slug {
-    min-height: 920px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .page .slug {
-    min-height: 500px;
-  }
-}
-
-.page .slug .page_title {
-  color: $font-color1;
-}
-
 .page .slug .post_date_author {
   text-align: right;
   color: $font-color2;
@@ -106,29 +81,5 @@ export default {
 
 .page .slug .pre_btn {
   text-align: center;
-}
-
-.page .slug .page_title ::before {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  left: -30px;
-  top: 25px;
-}
-
-.page .slug .page_title ::after {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  right: -30px;
-  top: 25px;
 }
 </style>

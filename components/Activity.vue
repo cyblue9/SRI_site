@@ -1,5 +1,5 @@
 <template>
-  <div class="activity">
+  <div>
     <h2>ACTIVITY</h2>
     <v-container>
       <v-row>
@@ -70,11 +70,6 @@ export default {
 @import '~/assets/variables.scss';
 
 .index .activity {
-  margin-top: 100px;
-  padding-bottom: 100px;
-  padding-top: 100px;
-  text-align: center;
-  color: $font-color1;
   background-color: $bg-color1;
 }
 
@@ -97,29 +92,5 @@ export default {
 .index .activity .more_btn {
   margin-right: auto;
   margin-left: auto;
-}
-
-.index .activity h2::before {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  left: -30px;
-  top: 30px;
-}
-
-.index .activity h2::after {
-  content: '';
-  background-color: $accent;
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  right: -30px;
-  top: 30px;
 }
 </style>
