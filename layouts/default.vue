@@ -55,7 +55,9 @@
           by Yuya Chiba (@cyblue9)</span
         >
       </v-col>
-      <v-icon color="#F44336" size="30px">mdi-github</v-icon>
+      <a href="https://github.com/cyblue9/SRI_site">
+        <v-icon color="#F44336" size="30px">mdi-github</v-icon>
+      </a>
     </v-footer>
   </v-app>
 </template>
