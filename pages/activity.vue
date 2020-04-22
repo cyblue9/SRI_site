@@ -6,7 +6,11 @@
       </div>
       <v-container>
         <template v-for="(activitiy, i) in activities">
-          <div class="one_activity" v-bind:key="i">
+          <div
+            class="one_activity"
+            v-bind:id="`${activitiy.classTag}`"
+            v-bind:key="i"
+          >
             <div class="activity_title" v-bind:key="i">
               <h2>{{ activitiy.title }}</h2>
             </div>
@@ -32,7 +36,7 @@
                         <div class="more_btn">
                           <v-btn
                             v-bind:href="`${card.more}`"
-                            x-large
+                            large
                             color="red"
                             class="white--text"
                           >
@@ -58,6 +62,7 @@ export default {
     activities: {
       meetings: {
         title: '勉強会',
+        classTag: 'meetings',
         cards: [
           {
             title: '競技プログラミング勉強会',
@@ -79,6 +84,7 @@ export default {
       },
       develops: {
         title: '制作活動',
+        classTag: 'develops',
         cards: [
           {
             title: 'SRI HP',
@@ -90,6 +96,7 @@ export default {
       },
       writtings: {
         title: '執筆活動',
+        classTag: 'writtings',
         cards: [
           {
             title: 'ABC予想　入門',
@@ -100,6 +107,7 @@ export default {
       },
       contests: {
         title: 'コンテスト',
+        classTag: 'contests',
         cards: [
           {
             title: 'picoCTF',
@@ -128,7 +136,8 @@ export default {
 }
 
 .page .activity .one_activity {
-  padding-top: 20px;
+  margin-top: -60px;
+  padding-top: 80px;
 }
 
 .page .activity .card_title {

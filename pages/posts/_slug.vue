@@ -23,7 +23,7 @@
         </template>
 
         <div class="pre_btn">
-          <v-btn to="/blog" nuxt x-larg color="red" class="white--text"
+          <v-btn to="/blog" nuxt large color="red" class="white--text"
             >Back</v-btn
           >
         </div>

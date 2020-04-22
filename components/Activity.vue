@@ -24,15 +24,20 @@
                   {{ card.detail }}
                 </div>
               </v-card-text>
+              <div class="more_btn">
+                <v-btn
+                  v-bind:to="`${card.to}`"
+                  large
+                  color="red"
+                  class="white--text"
+                >
+                  More
+                </v-btn>
+              </div>
             </v-card>
           </v-col>
         </template>
       </v-row>
-      <div class="more_btn">
-        <v-btn to="/activity" x-large color="red" class="white--text">
-          More
-        </v-btn>
-      </div>
     </v-container>
   </div>
 </template>
@@ -44,22 +49,26 @@ export default {
       {
         image: '/activity1.jpg',
         title: '勉強会',
-        detail: '外部講師をお招きして、ワイワイガヤガヤ勉強会を行います。'
+        detail: '外部講師をお招きして、ワイワイガヤガヤ勉強会を行います。',
+        to: '/activity#meetings'
       },
       {
         image: '/activity2.jpg',
         title: '製作活動',
-        detail: '最新技術を用いた製作活動を行います。'
+        detail: '最新技術を用いた製作活動を行います。',
+        to: '/activity#develops'
       },
       {
         image: '/activity3.jpg',
         title: '執筆活動',
-        detail: '論文などの執筆を行います。'
+        detail: '論文などの執筆を行います。',
+        to: '/activity#writtings'
       },
       {
         image: '/activity4.jpg',
         title: 'コンテスト',
-        detail: 'CTFや競技プログラミングに参加します。勉強会も行います。'
+        detail: 'CTFや競技プログラミングに参加します。勉強会も行います。',
+        to: '/activity#contests'
       }
     ]
   })

@@ -29,7 +29,7 @@
                 <div class="card_btn">
                   <v-btn
                     v-bind:to="`/posts/${post.fields.postSlug}`"
-                    x-large
+                    large
                     color="red"
                     class="white--text"
                   >

@@ -31,7 +31,7 @@
                   <span class="card_btn">
                     <v-btn
                       v-bind:href="`${card.more}`"
-                      x-large
+                      large
                       color="red"
                       class="white--text"
                     >
