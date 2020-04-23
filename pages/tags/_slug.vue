@@ -34,7 +34,7 @@
                   <div class="tag_label">{{ tag.fields.name }}</div>
                 </v-chip>
               </template>
-              <div class="card_body">
+              <div class="post_body">
                 {{ getFirstBody($md.render(post.fields.postBody), 350) }}
               </div>
             </div>
@@ -75,39 +75,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~/assets/variables.scss';
-
-.page .tags .row {
-  border-top: 1px solid #ccc;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.page .tags .post_date_author {
-  font-size: 85%;
-  color: $font-color2;
-}
-
-.page .tags .post_title {
-  font-size: 200%;
-  font-weight: 900;
-}
-
-.page .tags .post_title a:link,
-.page .tags .post_title a:visited {
-  color: $accent;
-}
-
-.page .tags .card_body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 120%;
-  color: $font-color1;
-  text-align: left;
-  line-height: 1.5em;
-}
-
-.page .tags .tag_label {
-  color: $font-color2;
-}
+@import '~/assets/blog_post.scss';
 </style>
