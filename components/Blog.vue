@@ -64,10 +64,7 @@ export default {
   },
   methods: {
     getImgUrl() {
-      return (
-        'https://source.unsplash.com/featured/?nature,water,town,city' +
-        Math.random(1000)
-      )
+      return '/post_img/' + (Math.floor(Math.random() * 19) + 1) + '.jpeg'
     }
   }
 }

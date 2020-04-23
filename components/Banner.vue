@@ -14,11 +14,25 @@
 @import '~/assets/variables.scss';
 
 .index .header {
-  background-image: url('../static/bg_img.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 56px;
   height: 100vh;
+}
+
+@media screen and (max-width: 480px) {
+  .index .header {
+    background-image: url('../static/bg_img_480.jpg');
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .index .header {
+    background-image: url('../static/bg_img_768.jpg');
+  }
+}
+@media screen and (min-width: 1024px) {
+  .index .header {
+    background-image: url('../static/bg_img_1024.jpg');
+  }
 }
 
 .index .bg_opacity {
