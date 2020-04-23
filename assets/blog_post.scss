@@ -1,0 +1,40 @@
+@import '~/assets/variables.scss';
+
+$classes: blog, tags;
+
+@each $class in $classes {
+
+.page .#{$class} .row {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.page .#{$class} .post_date_author {
+  font-size: 85%;
+  color: $font-color2;
+}
+
+.page .#{$class} .post_title {
+  font-size: 200%;
+  font-weight: 900;
+}
+
+.page .#{$class} .post_title a:link,
+.page .#{$class} .post_title a:visited {
+  color: $accent;
+}
+
+.page .#{$class} .post_body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 100%;
+  color: $font-color1;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.page .#{$class} .tag_label {
+  color: $font-color2;
+}
+}

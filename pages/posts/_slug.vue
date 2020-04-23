@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <div class="slug">
+    <div class="posts">
       <v-container class="spacing-playground px-12">
         <template v-if="currentPost">
           <div class="page_title">
@@ -65,13 +65,13 @@ export default {
 <style lang="scss">
 @import '~/assets/variables.scss';
 
-.page .slug .post_date_author {
+.page .posts .post_date_author {
   text-align: right;
   color: $font-color2;
   font-size: 85%;
 }
 
-.page .slug .post_body {
+.page .posts .post_body {
   margin-top: 10px;
   margin-bottom: 20px;
   padding-top: 5px;
@@ -79,7 +79,7 @@ export default {
   border-bottom: 1px solid #ccc;
 }
 
-.page .slug .pre_btn {
+.page .posts .pre_btn {
   text-align: center;
 }
 </style>
