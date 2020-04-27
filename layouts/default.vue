@@ -73,7 +73,8 @@ export default {
         { title: 'Member', icon: 'mdi-account-group', link: '/member' },
         { title: 'Activity', icon: 'mdi-laptop', link: '/activity' },
         { title: 'Blog', icon: 'mdi-post-outline', link: '/blog' },
-        { title: 'Contact Us', icon: 'mdi-email', link: '/contact' }
+        { title: 'Contact Us', icon: 'mdi-email', link: '/contact' },
+        { title: 'CTF', icon: 'mdi-flag', link: '/ctf' }
       ],
       miniVariant: false,
       right: true,

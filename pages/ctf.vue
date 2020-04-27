@@ -11,7 +11,13 @@
           Question:
           サイエンス(SRI)研究会では、主に4つの活動をしています。「勉強会」、「製作活動」、「執筆活動」、あと１つは何でしょう？
         </p>
-        <v-text-field v-model="input" label="answer" outlined color="red" />
+        <v-text-field
+          v-model="input"
+          label="answer"
+          outlined
+          color="red"
+          :rules="[rules.required]"
+        />
         <div class="form_btn">
           <v-btn x-large color="red" class="white--text" @click="submit">
             Answer
@@ -29,7 +35,10 @@ export default {
     return {
       input: '',
       output: '',
-      submitResult: ''
+      submitResult: '',
+      rules: {
+        required: (value) => !!value || 'Required.'
+      }
     }
   },
   methods: {
@@ -42,7 +51,7 @@ export default {
       if (this.input.match(/<script>.*alert\(.*\).*<\/script>/)) {
         try {
           await eval(this.input.replace(/<\/?script>/g, '')) // eslint-disable-line
-          this.output = 'flag{XSS_XSS_Xmass_XSS}'
+          this.output = 'flag is XSS_XSS_XmaSS_XSS'
           return
         } catch (e) {
           console.log(this.input)
