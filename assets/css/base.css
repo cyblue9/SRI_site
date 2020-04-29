@@ -33,7 +33,7 @@ html {
   height: 12px;
   border-radius: 100%;
   left: -30px;
-  top: 25px;
+  top: 40%;
 }
 
 .page .page_title h1::after {
@@ -45,7 +45,7 @@ html {
   height: 12px;
   border-radius: 100%;
   right: -30px;
-  top: 25px;
+  top: 40%;
 }
 
 .v-application a {

@@ -65,6 +65,10 @@ export default {
 <style lang="scss">
 @import '~/assets/variables.scss';
 
+.page .posts .page_title h1 {
+  font-size: 180%;
+}
+
 .page .posts .post_date_author {
   text-align: right;
   color: $font-color2;
@@ -77,6 +81,18 @@ export default {
   padding-top: 5px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+}
+
+.page .posts .post_body h1 {
+  font-size: 180%;
+}
+
+.page .posts .post_body h2 {
+  font-size: 150%;
+}
+
+.page .posts .post_body h3 {
+  font-size: 120%;
 }
 
 .page .posts .pre_btn {
