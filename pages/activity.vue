@@ -90,7 +90,8 @@ export default {
             title: 'SRI HP',
             date: '2020/4/19',
             detail: '当HPを作成しました。詳細はブログにて。',
-            more: 'aaaaaaaa'
+            more:
+              'https://sience-research-institution.netlify.app/posts/202004190500'
           }
         ]
       },
@@ -99,9 +100,9 @@ export default {
         classTag: 'writtings',
         cards: [
           {
-            title: 'ABC予想　入門',
-            date: '2222/2/22',
-            detail: 'ABC予想が証明され200年が経過しました。おさらいしましょう。'
+            title: '論文執筆',
+            date: '2020/4 ~',
+            detail: '論文執筆中です。'
           }
         ]
       },

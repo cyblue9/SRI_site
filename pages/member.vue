@@ -54,7 +54,7 @@ export default {
     cards: [
       {
         icon: '/icons/chiba_yuya.jpeg',
-        name: '千葉裕也(@cyblue9)',
+        name: '千葉裕也',
         intrest:
           '#extempore #livecoding #lisp #os #assembly #cpu #大学講師 #oss #growth-hack #security',
         more: 'https://cyblue9.github.io/'
@@ -62,56 +62,57 @@ export default {
       {
         icon: 'https://cdn.vuetifyjs.com/images/john.jpg',
         name: '総研太郎',
-        intrest: '#extempore #lisp #emacs  #linux #java',
+        intrest:
+          '#ctf #security #flag #xss #csrf #hijack #7pay #vulnerabílity #wannacty',
         more: 'http'
       },
       {
         icon: 'https://cdn.vuetifyjs.com/images/john.jpg',
         name: '総研太郎',
         intrest:
-          '#extempore #lisp #emacs #lambda #html #css #web #devops #github #linux #java',
+          '#ctf #security #flag #xss #csrf #hijack #7pay #vulnerabílity #wannacty',
         more: 'http'
       },
       {
         icon: 'https://cdn.vuetifyjs.com/images/john.jpg',
         name: '総研太郎',
         intrest:
-          '#extempore #lisp #emacs #lambda #html #css #web #devops #github #linux #java',
+          '#ctf #security #flag #xss #csrf #hijack #7pay #vulnerabílity #wannacty',
         more: 'http'
       },
       {
         icon: 'https://cdn.vuetifyjs.com/images/john.jpg',
         name: '総研太郎',
         intrest:
-          '#extempore #lisp #emacs #lambda #html #css #web #devops #github #linux #java',
+          '#ctf #security #flag #xss #csrf #hijack #7pay #vulnerabílity #wannacty',
         more: 'http'
       },
       {
         icon: 'https://cdn.vuetifyjs.com/images/john.jpg',
         name: '総研太郎',
         intrest:
-          '#extempore #lisp #emacs #lambda #html #css #web #devops #github #linux #java',
+          '#ctf #security #flag #xss #csrf #hijack #7pay #vulnerabílity #wannacty',
         more: 'http'
       },
       {
         icon: 'https://cdn.vuetifyjs.com/images/john.jpg',
         name: '総研太郎',
         intrest:
-          '#extempore #lisp #emacs #lambda #html #css #web #devops #github #linux #java',
+          '#ctf #security #flag #xss #csrf #hijack #7pay #vulnerabílity #wannacty',
         more: 'http'
       },
       {
         icon: 'https://cdn.vuetifyjs.com/images/john.jpg',
         name: '総研太郎',
         intrest:
-          '#extempore #lisp #emacs #lambda #html #css #web #devops #github #linux #java',
+          '#ctf #security #flag #xss #csrf #hijack #7pay #vulnerabílity #wannacty',
         more: 'http'
       },
       {
         icon: 'https://cdn.vuetifyjs.com/images/john.jpg',
         name: '総研太郎',
         intrest:
-          '#extempore #lisp #emacs #lambda #html #css #web #devops #github #linux #java',
+          '#ctf #security #flag #xss #csrf #hijack #7pay #vulnerabílity #wannacty',
         more: 'http'
       }
     ]
